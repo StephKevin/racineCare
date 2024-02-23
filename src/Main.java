@@ -7,7 +7,7 @@ public class Main {
         System.out.println("entrez un nombre positif:");
         Scanner lectureClavier = new Scanner(System.in);
         x = lectureClavier.nextDouble();
-        while (x!=0)
+        do
         {
             if(x<0){
                 System.out.println("un nombre positif SVP!");
@@ -15,7 +15,7 @@ public class Main {
             else{
                 System.out.println("la racine care de "+x+" est "+Math.sqrt(x));
             }
-            x=0;
         }
+        while (x!=0);
     }
 }
